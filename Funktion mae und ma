@@ -1,0 +1,31 @@
+Mean absolute error and absolute error 
+
+
+def mae(y_true,y_pred)
+  N = len(y_true)
+  error = 0.0
+  for i in range (N):
+    error += abs(y_true[i]-y_pred[i])
+  error *= 1/N
+  return error
+  
+def ma(y_true,y_pred)
+   N = len(y_true)
+   error = 0.0
+   for i in range (N):
+      error += (y_ture[i]-y_pred[i])**2
+   error *= 1/N
+   return error
+   
+   
+vereinfachte version 
+  def mae(y_true,y_pred)
+     N = len(y_true)
+     error = 1/N * sum(abs(y_true[i]-y_pred[i]))
+    return error
+  
+  d def mae(y_true,y_pred)
+     N = len(y_true)
+     error = 1/N * sum(y_true[i]-y_pred[i])**2)
+     return error
+   
